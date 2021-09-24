@@ -31,8 +31,8 @@ RUN apt-get update && \
 
 # golang install
 RUN mkdir tmpgo && cd /tmpgo && \
-  wget https://golang.org/doc/install?download=go1.16.4.linux-amd64.tar.gz && \
-  sudo tar -xvf go1.16.4.linux-amd64.tar.gz && \
+  wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz -O package.tar.gz && \
+  sudo tar -xvf package.tar.gz && \
   sudo mv go /usr/local
 
 ENV GOROOT /usr/local/go
