@@ -18,6 +18,6 @@ jobs:
 
     - name: Build the dev environment Docker image
       run: |
-        docker build . --tag ghcr.io/MatthewZito/docker-dev-env:latest
-        docker run ghcr.io/MatthewZito/docker-dev-env:latest
-        docker push ghcr.io/MatthewZito/docker-dev-env:latest
+        docker build . --tag ghcr.io/@magister_zito/docker-dev-env:latest
+        docker run ghcr.io/@magister_zito/docker-dev-env:latest
+        docker push ghcr.io/@magister_zito/docker-dev-env:latest
